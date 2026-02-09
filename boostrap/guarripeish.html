@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        header {
+            background-color: #2e3357;
+            color: white;
+            padding: 20px;
+        }
+        article {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        aside {
+            background-color: #1b839b;
+            color: white;
+            padding: 20px;
+        }
+        footer {
+            background-color: #8b2f2f;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+
+    <!-- Header -->
+    <header class="row mb-3">
+        <div class="col-12">
+            <h2>Header</h2>
+            <small>12 columns</small>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="row mb-3">
+        <article class="col-12 col-lg-8">
+            <h3>Article</h3>
+            <small>8 columns</small>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </article>
+
+        <aside class="col-12 col-lg-4">
+            <h3>Aside</h3>
+            <small>4 columns</small>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="row">
+        <div class="col-12">
+            <h3>Footer</h3>
+            <small>12 columns</small>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

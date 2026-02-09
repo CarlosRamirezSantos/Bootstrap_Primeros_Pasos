@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CursosWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mi_menu" aria-controls="mi_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mi_menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <div class="container py-4">
+        <div class="carousel slide" id="mi_carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#mi_carousel" data-bs-slide-to="0"></button>
+                <button data-bs-target="#mi_carousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#mi_carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner carousel-fade">
+                <div class="carousel-item active" data-bs-interval='2000'>
+                    <img src="imagenes/img1.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Curso HTML</h3>
+                        <p>Aprende HTML desde cero.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval='2000'>
+                    <img src="imagenes/img2.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Curso CSS</h3>
+                        <p>Aprende CSS desde cero.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval='2000'>
+                    <img src="imagenes/img3.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Bootstrap</h3>
+                        <p>Webs responsive rápido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#mi_carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#mi_carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> 
+        </div>
+    </div>
+
+    <div class="container py-4 bg-light">
+        <h1 class="text-center">Nuestros cursos</h1>
+        <div class="card-group"> <div class="row g-4">
+                
+                <div class="col-12 col-md-6">
+                    <div class="card border-primary">
+                        <img class="card-img-top" src="imagenes/img1.jpg" alt="" >
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h1 class="card-title h5">Curso HTML</h1>
+                                <div class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                    <span class="text-muted small text-dark">3.5/5</span>
+                                </div>
+                            </div>
+                            
+                            <h1 class="card-subtitle h6 mt-1">Aprende HTML desde cero.</h1>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#mi_modal">Más información</button>
+                            
+                            <div class="modal fade" id="mi_modal" data-bs-backdrop="static" >
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark text-white">
+                                            <h6 class="modal-title">Solicitar ¡Información del Curso</h6>
+                                            <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="">
+                                                
+                                                <div class="row g-3">
+                                                    <div class="col-12 col-md-6">
+                                                        <label class="form-label fw-bold" for="name">Nombre completo</label>
+                                                        <input type="text" class="form-control" placeholder="Tu nombre y apellidos" >
+                                                    </div>
+                                                    <div class="col-12 col-md-6">
+                                                        <label class="form-label fw-bold" for="email">Correo electrónico</label>
+                                                        <input type="email" class="form-control" placeholder="nombre@ejemplo.com">
+                                                    </div>
+                                                </div>
+
+                                                <label class="form-label mt-3 fw-bold" for="curso">Curso de interés</label>
+                                                <select class="form-select">
+                                                    <option selected value="1">Curso HTML</option>
+                                                    <option value="2">Curso CSS</option>
+                                                    <option value="3">Bootstrap</option>
+                                                </select>
+                                                <label class="form-label mt-3 fw-bold" for="duda">¿Tienes alguna duda específica?</label>
+                                                <textarea class="form-control" rows="3" placeholder="Escribe aquí tus preguntas..."></textarea>
+
+                                                <div class="row">
+                                                    <div class="col-12 text-center">
+                                                        <button class="btn btn-primary mt-3 w-100">Enviar</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 text-center">
+                                                        <button class="btn btn-danger mt-3 w-100" data-bs-dismiss="modal">Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-3">
+                    <div class="card border-success">
+                        <img class="card-img-top" src="imagenes/img3.jpg" alt="" >
+                        <div class="card-body">
+                            <h1 class="card-title h5">Curso CSS</h1>
+                            <h1 class="card-subtitle h6 mt-1">Diseña sitios modernos.</h1>
+                            <button class="btn btn-success mt-3">Ver curso</button>
+                            <span class="badge rounded-pill bg-primary">120 alumnos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="card border-warning h-100">
+                        <img class="card-img-top" src="imagenes/img2.jpg" alt="" >
+                        <div class="card-body">
+                            <h1 class="card-title h5">Bootstrap</h1>
+                            <h1 class="card-subtitle h6 mt-1">Webs responsive rápido.</h1>
+                            <button class="btn btn-warning mt-3">Ver curso</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
